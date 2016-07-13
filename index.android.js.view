@@ -1,0 +1,55 @@
+import React, { Component } from 'react';
+import {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
+
+class RNAppProject extends Component {
+  render() {
+    return (
+        <View style={styles.container}>
+          <View style={styles.custom_container}>
+            <View style={styles.custom_container_inner}></View>
+          </View>
+        </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF'
+  },
+  custom_container: {
+    width: 400,
+    height: 300,
+    backgroundColor: '#7cb342',
+    borderBottomColor: 'darkgray',
+    borderBottomWidth: 20,
+    borderLeftWidth: 10,
+    borderLeftColor: 'antiquewhite',
+    borderRightWidth: 5,
+    borderRightColor: 'crimson',
+    borderTopWidth: 2,
+    borderTopColor: 'black',
+    paddingLeft: 130,
+    paddingTop: 110
+  },
+  custom_container_inner: {
+    width: 150,
+    height: 55,
+    backgroundColor: '#e32a61',
+    borderWidth: 1,
+    borderRadius: 5,
+    borderStyle: 'dashed',
+    borderColor: '#ffffff'
+  }
+
+});
+
+AppRegistry.registerComponent('RNAppProject', () => RNAppProject);

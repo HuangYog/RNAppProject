@@ -1,0 +1,3 @@
+rootProject.name = 'RNAppProject'
+
+include ':app'
